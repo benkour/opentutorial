@@ -20,15 +20,15 @@ FoamFile
     allBoundary
     {
         type            patch;
-        nFaces          18540;
-        startFace       517582;
+        nFaces          18424;
+        startFace       1441421;
     }
     art
     {
         type            wall;
         inGroups        1(wall);
-        nFaces          4174;
-        startFace       536122;
+        nFaces          154020;
+        startFace       1459845;
     }
 )
 
