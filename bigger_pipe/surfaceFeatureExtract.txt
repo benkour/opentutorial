@@ -1,0 +1,245 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  5.x                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 5.x-197d9d3bf20a
+Exec   : surfaceFeatureExtract
+Date   : Jun 28 2018
+Time   : 15:25:48
+Host   : "john-ThinkPad-Edge"
+PID    : 19835
+I/O    : uncollated
+Case   : /home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster (fileModificationSkew 10)
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Reading surfaceFeatureExtractDict
+
+Surface            : "box.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 1394
+Vertices     : 693
+Bounding Box : (-0.73517 -0.62 0) (0.30994 0.44 2.02535)
+
+
+Constructing feature set from included angle 150
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 110
+    feature edges  : 614
+    of which
+        region edges   : 34
+        external edges : 372
+        internal edges : 208
+
+
+Final feature set:
+    points : 558
+    of which
+        convex             : 32
+        concave            : 0
+        mixed              : 78
+        non-feature        : 448
+    edges  : 614
+    of which
+        external edges     : 372
+        internal edges     : 208
+        flat edges         : 0
+        open edges         : 34
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box"
+Writing convex feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_convexFeaturePts.obj"
+Writing concave feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_externalEdges.obj"
+Writing internal edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_internalEdges.obj"
+Writing flat edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_flatEdges.obj"
+Writing open edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_openEdges.obj"
+Writing multiple edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_multipleEdges.obj"
+Writing region edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_regionEdges.obj"
+Writing edge directions to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/box_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/triSurface/box.eMesh"
+
+Surface            : "outlet.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 76
+Vertices     : 40
+Bounding Box : (-0.47882 0.03 2.02535) (-0.14882 0.41 2.03535)
+
+
+Constructing feature set from included angle 150
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 0
+    feature edges  : 40
+    of which
+        region edges   : 0
+        external edges : 40
+        internal edges : 0
+
+
+Final feature set:
+    points : 40
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 40
+    edges  : 40
+    of which
+        external edges     : 40
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet"
+Writing convex feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_convexFeaturePts.obj"
+Writing concave feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_externalEdges.obj"
+Writing internal edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_internalEdges.obj"
+Writing flat edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_flatEdges.obj"
+Writing open edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_openEdges.obj"
+Writing multiple edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_multipleEdges.obj"
+Writing region edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_regionEdges.obj"
+Writing edge directions to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/outlet_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/triSurface/outlet.eMesh"
+
+Surface            : "inlet.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 76
+Vertices     : 40
+Bounding Box : (-0.48391 0.03645 -0.01) (-0.14391 0.42645 0)
+
+
+Constructing feature set from included angle 150
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 0
+    feature edges  : 40
+    of which
+        region edges   : 0
+        external edges : 40
+        internal edges : 0
+
+
+Final feature set:
+    points : 40
+    of which
+        convex             : 0
+        concave            : 0
+        mixed              : 0
+        non-feature        : 40
+    edges  : 40
+    of which
+        external edges     : 40
+        internal edges     : 0
+        flat edges         : 0
+        open edges         : 0
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet"
+Writing convex feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_convexFeaturePts.obj"
+Writing concave feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_externalEdges.obj"
+Writing internal edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_internalEdges.obj"
+Writing flat edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_flatEdges.obj"
+Writing open edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_openEdges.obj"
+Writing multiple edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_multipleEdges.obj"
+Writing region edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_regionEdges.obj"
+Writing edge directions to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/inlet_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/triSurface/inlet.eMesh"
+
+Surface            : "thermal.stl"
+
+
+Feature line extraction is only valid on closed manifold surfaces.
+Statistics:
+Triangles    : 180
+Vertices     : 105
+Bounding Box : (-0.73517 -0.58686 2.01535) (0.27 0.40314 2.03535)
+
+
+Constructing feature set from included angle 150
+Selecting edges purely based on geometric tests: no
+
+Initial feature set:
+    feature points : 55
+    feature edges  : 124
+    of which
+        region edges   : 46
+        external edges : 64
+        internal edges : 14
+
+
+Final feature set:
+    points : 94
+    of which
+        convex             : 13
+        concave            : 0
+        mixed              : 42
+        non-feature        : 39
+    edges  : 124
+    of which
+        external edges     : 64
+        internal edges     : 14
+        flat edges         : 0
+        open edges         : 46
+        multiply connected : 0
+
+Writing extendedFeatureEdgeMesh to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal.extendedFeatureEdgeMesh"
+
+Writing extendedEdgeMesh components to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal"
+Writing convex feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_convexFeaturePts.obj"
+Writing concave feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_concaveFeaturePts.obj"
+Writing mixed feature points to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_mixedFeaturePts.obj"
+Writing mixed feature point structure to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_mixedFeaturePtsStructure.obj"
+Writing external edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_externalEdges.obj"
+Writing internal edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_internalEdges.obj"
+Writing flat edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_flatEdges.obj"
+Writing open edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_openEdges.obj"
+Writing multiple edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_multipleEdges.obj"
+Writing region edges to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_regionEdges.obj"
+Writing edge directions to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/extendedFeatureEdgeMesh/thermal_edgeDirections.obj"
+
+Writing featureEdgeMesh to "/home/john/Desktop/cse/4semester/openfinal/opentutorial/bigger_pipe/constant/triSurface/thermal.eMesh"
+
+ExecutionTime = 0.06 s  ClockTime = 0 s
+
+End
+
