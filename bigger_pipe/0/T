@@ -36,20 +36,20 @@ boundaryField
         type            fixedValue;
         value           uniform 293;
     }
-      outlet
+    //  outlet
+    //{
+      //  type            fixedValue;
+      //  value           uniform 293;
+    //}
+    //  thermal
+   // {
+   // type        fixedGradient;
+   // gradient    uniform 400;
+   // }
+	ceiling
     {
-        type            fixedValue;
-        value           uniform 293;
-    }
-      thermal
-    {
-    type        fixedGradient;
-    gradient    uniform 400;
-    }
-ceiling
-    {
-        type            fixedValue;
-        value           uniform 293;
+	type        fixedGradient;
+        gradient    uniform 20;
     }
 }
 

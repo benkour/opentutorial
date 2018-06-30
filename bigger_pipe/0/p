@@ -22,31 +22,31 @@ boundaryField
 {
 allBoundary
 {
-  type		zeroGradient;
+  type     zeroGradient;
 }
 inlet
 {
 
   type		zeroGradient;
 }
-outlet
-{
-        type            fixedValue;
-        value           uniform 101300;
-}
+//outlet
+//{
+  //      type            fixedValue;
+  //      value           uniform 101300;
+//}
 box
 {
 
   type     zeroGradient;
 }
-thermal
-{
-  type     zeroGradient;
-}
+//thermal
+//{
+//  type     zeroGradient;
+//}
 ceiling
 {
 
-         type            fixedValue;
+	type            fixedValue;
         value           uniform 101300;
 }
 

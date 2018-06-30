@@ -34,31 +34,31 @@ geometry
         type triSurfaceMesh;
         file "box.stl";
     }
-inlet
-    {
-        type triSurfaceMesh;
-        file "inlet.stl";
-    }
-outlet
-    {
-        type triSurfaceMesh;
-        file "outlet.stl";
-    }
-
-thermal
-    {
-        type triSurfaceMesh;
-        file "thermal.stl";
-    }
-
-    //- Refine a bit extra around the small centre hole
-    //  box
+//inlet
    // {
-       // type searchableBox;
-       // min (-2 -2 -2);
-	//max (2 2 2);
-
+      //  type triSurfaceMesh;
+      //  file "inlet.stl";
    // }
+//outlet
+   // {
+     //   type triSurfaceMesh;
+      //  file "outlet.stl";
+   // }
+
+//thermal
+   // {
+      //  type triSurfaceMesh;
+      //  file "thermal.stl";
+   // }
+
+    //- Refine top 
+     // box
+   //{
+      //  type searchableBox;
+      //  min (-0.735 -0.62 2);
+	//max (0.31 0.405 2.03);
+
+    //}
 };
 
 
@@ -106,18 +106,18 @@ castellatedMeshControls
             file "box.extendedFeatureEdgeMesh";
             level 0;
         }
-{
-            file "outlet.extendedFeatureEdgeMesh";
-            level 0;
-        }
-{
-            file "thermal.extendedFeatureEdgeMesh";
-            level 0;
-        }
-{
-            file "inlet.extendedFeatureEdgeMesh";
-            level 0;
-        }
+//{
+        //    file "outlet.extendedFeatureEdgeMesh";
+         //   level 0;
+      //  }
+//{
+           // file "thermal.extendedFeatureEdgeMesh";
+           // level 0;
+       // }
+//{
+          //  file "inlet.extendedFeatureEdgeMesh";
+           // level 0;
+        //}
     );
 
 
@@ -138,21 +138,21 @@ castellatedMeshControls
             // Surface-wise min and max refinement level
             level (2 2);
         }
-      inlet
-        {
+    //  inlet
+      //  {
             // Surface-wise min and max refinement level
-            level (2 2);
-        }
-	outlet
-        {
+          //  level (2 2);
+       // }
+	//outlet
+       // {
             // Surface-wise min and max refinement level
-            level (2 2);
-        }
-	thermal
-        {
+          //  level (2 2);
+        //}
+	//thermal
+       // {
             // Surface-wise min and max refinement level
-            level (2 2);
-        }
+         //   level (2 2);
+        //}
     }
 
     resolveFeatureAngle 30;
@@ -226,7 +226,7 @@ snapControls
         nFeatureSnapIter 10;
 
         //- Detect (geometric) features by sampling the surface
-        implicitFeatureSnap false;
+        implicitFeatureSnap true;
 
         //- Use castellatedMeshControls::features
         explicitFeatureSnap true;
@@ -248,26 +248,26 @@ addLayersControls
     // Per final patch (so not geometry!) the layer information
     layers
     {
-        "box_.*"
+        "box.*"
         {
-            nSurfaceLayers 1;
+            nSurfaceLayers 2;
         }
 
 
-        "inlet_.*"
-        {
-            nSurfaceLayers 1;
-        }
+       // "inlet.*"
+       // {
+         //   nSurfaceLayers 2;
+       // }
 
- 	"outlet_.*"
-        {
-            nSurfaceLayers 1;
-        }
+ 	//"outlet.*"
+       // {
+         //   nSurfaceLayers 2;
+      //  }
 
- 	"thermal_.*"
-        {
-            nSurfaceLayers 1;
-        }
+ 	//"thermal.*"
+       // {
+          //  nSurfaceLayers 2;
+       // }
     }
 
     // Expansion factor for layer mesh

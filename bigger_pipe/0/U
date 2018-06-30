@@ -30,7 +30,7 @@ inlet
 {
 
   type		fixedValue;
-  value 	uniform (0 0 3);
+  value 	uniform (0 0 4);
 }
 
 box
@@ -38,18 +38,19 @@ box
   type		fixedValue;
   value 	uniform (0 0 0);
 }
-outlet
-{
-  type		zeroGradient;
-}
-thermal
-{
-  type		fixedValue;
-  value 	uniform (0 0 0);
-}
+//outlet
+//{
+//  type		zeroGradient;
+//}
+//thermal
+//{
+//  type		fixedValue;
+ // value 	uniform (0 0 0);
+//}
 ceiling
 {
-  type		zeroGradient;
+  type     zeroGradient;
+
 }
 }
 
